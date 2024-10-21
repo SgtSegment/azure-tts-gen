@@ -11,7 +11,7 @@ rl.question("Voice (leave blank for default): ", async function(output){
         voice = output;
     e();
 });
-e();
+
 function e() {
     rl.question("\n\nText to Speech: ", async function(output){
         const filename = output.slice(0, 9)+"-"+Date.now().toString()+".mp3";
